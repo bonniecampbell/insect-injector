@@ -1,52 +1,51 @@
-// Create your variable here, name it `insects`
-"Name","Image","Family","Min. size","Max. size","Eats insects","Eats dung","Eats plants"
-"Ant Nest Beetle","ant-nest-beetle.jpg","Carabidae","6","20","Yes","No","No"
-"Dung Beetle","dung-beetle.jpg","Scarabidae","20","30","No","Yes","No"
-"Stag Beetle","stag-beetle.jpg","Lucanidae","5","120","No","No","Yes"
-"Tortoise Beetle","tortoise-beetle.jpg","Cassidinae","1","18","No","No","Yes"
+// Create your variable here, name it `insects
 
-var ant-nest-beetle = {
-  name: 'Ant Nest Beetle',
-  image: ant-nest-beetle.jpg,
-  family: 'Carabidae',
-  size:'6-20 mm',
-  eats: 'Insects'
-};
-
-var dung-beetle = {
-  name: 'Dung Bettle',
-  image: dung-beetle.jpg,
-  family: 'Scarabidae',
-  size:'20-30 mm',
-  eats: 'Dung'
-};
-
-var stag-beetle = {
-  name: 'Stag Bettle',
-  image: stag-beetle.jpg,
-  family: 'Lucanidae',
-  size:'5-120 mm',
-  eats: 'Plants'
-};
-
-var tortoise-beetle = {
-  name: 'Tortoise Bettle',
-  image: tortoise-beetle.jpg,
-  family: 'Cassidinae',
-  size:'1-18 mm',
-  eats: 'Plants'
-};
-
-var insects = [ant-nest-beetle, dung-beetle, stag-beetle, tortoise-beetle]
-
-insects.forEach(function (item){
-  document.write('<h2>' + item.name + '</h2>');
-};
-
-
-
-
-
+var insects = [
+  {
+    name: 'Ant Nest Beetle',
+    img: 'ant-nest-beetle.jpg',
+    family: 'Carabidae',
+    size: [6, 20],
+    food: {
+      eatsInsects: true,
+      eatsDung: false,
+      eatsPlants: true
+    }
+  },
+  {
+    name: 'Dung Beetle',
+    img: 'dung-beetle.jpg',
+    family: 'Scarabidae',
+    size: [20, 30],
+    food: {
+      eatsInsects: true,
+      eatsDung: true,
+      eatsPlants: false
+    }
+  },
+  {
+    name: 'Stag Beetle',
+    img: 'stag-beetle.jpg',
+    family: 'Lucanidae',
+    size: [5, 120],
+    food: {
+      eatsInsects: false,
+      eatsDung: false,
+      eatsPlants: true
+    }
+  },
+  {
+    name: 'Tortoise Beetle',
+    img: 'tortoise-beetle.jpg',
+    family: 'Cassidinae',
+    size: [1, 18],
+    food: {
+      eatsInsects: false,
+      eatsDung: false,
+      eatsPlants: true
+    }
+  }
+];
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
